@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>OriginalshopCanada - سیستم مدیریت هوشمند</title>
+    <title>OriginalshopCanada - ????? ?????? ??????</title>
     
     <!-- PWA Settings for Android -->
     <meta name="theme-color" content="#6d28d9">
@@ -15,7 +15,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
     <style>
-        /* استفاده از فونت‌های سیستمی مطمئن برای جلوگیری از به‌هم‌ریختگی در اندروید و ویندوز */
+        /* ??????? ?? ???????? ?????? ????? ???? ??????? ?? ???????????? ?? ??????? ? ?????? */
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;400;700&display=swap');
         
         body { 
@@ -43,7 +43,7 @@
         <header class="flex flex-col md:flex-row justify-between items-center bg-white p-5 rounded-3xl shadow-sm border-b-4 border-purple-600">
             <div class="text-center md:text-right">
                 <h1 class="text-2xl md:text-3xl font-black text-purple-900 tracking-tight">OriginalshopCanada</h1>
-                <p class="text-gray-500 text-xs mt-1 font-medium">سیستم ابری مدیریت کارکرد و حقوق</p>
+                <p class="text-gray-500 text-xs mt-1 font-medium">????? ???? ?????? ?????? ? ????</p>
             </div>
             <div class="mt-3 md:mt-0 flex flex-col items-center md:items-end">
                 <span class="bg-purple-100 text-purple-700 px-4 py-1.5 rounded-full text-[10px] font-bold border border-purple-200 uppercase">PWA Ready</span>
@@ -53,9 +53,9 @@
         
         <!-- Email Alert -->
         <div id="emailNotification" class="hidden bg-emerald-50 border-r-4 border-emerald-500 p-4 rounded-2xl flex flex-col gap-3 shadow-md animate-bounce">
-            <span id="emailStatusText" class="text-emerald-800 text-sm font-bold text-center">✅ گزارش ۵ تراکنش برای حسابداری ارسال شد.</span>
+            <span id="emailStatusText" class="text-emerald-800 text-sm font-bold text-center">? ????? ? ?????? ???? ???????? ????? ??.</span>
             <button onclick="simulateEmailReply()" class="w-full bg-emerald-600 text-white py-3 rounded-xl text-sm font-bold hover:bg-emerald-700 transition-all">
-                تایید نهایی و صفر کردن لیست
+                ????? ????? ? ??? ???? ????
             </button>
         </div>
 
@@ -67,52 +67,52 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                     </svg>
                 </div>
-                <h2 class="text-lg font-bold text-gray-800">تنظیمات و تعریف پرسنل</h2>
+                <h2 class="text-lg font-bold text-gray-800">??????? ? ????? ?????</h2>
             </div>
 
             <!-- Rate Adjustment -->
             <div class="bg-purple-50 p-4 rounded-2xl border border-purple-100 mb-6 flex flex-col md:flex-row items-center gap-4">
                 <div class="flex-1 w-full">
-                    <label class="block text-xs font-bold text-purple-700 mb-2">نرخ دستمزد ساعتی (تومان):</label>
+                    <label class="block text-xs font-bold text-purple-700 mb-2">??? ?????? ????? (?????):</label>
                     <input type="number" id="hourlyRateInput" class="input-style font-bold text-purple-900 !bg-white">
                 </div>
-                <button onclick="updateRate()" class="w-full md:w-auto bg-purple-600 text-white px-8 py-4 rounded-2xl font-bold shadow-md hover:bg-purple-700 transition-all mt-4 md:mt-6">بروزرسانی نرخ</button>
+                <button onclick="updateRate()" class="w-full md:w-auto bg-purple-600 text-white px-8 py-4 rounded-2xl font-bold shadow-md hover:bg-purple-700 transition-all mt-4 md:mt-6">????????? ???</button>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                <input type="text" id="newFirstName" placeholder="نام" class="input-style">
-                <input type="text" id="newLastName" placeholder="نام خانوادگی" class="input-style">
-                <input type="text" id="newCard" placeholder="شماره کارت" class="input-style text-left">
+                <input type="text" id="newFirstName" placeholder="???" class="input-style">
+                <input type="text" id="newLastName" placeholder="??? ????????" class="input-style">
+                <input type="text" id="newCard" placeholder="????? ????" class="input-style text-left">
             </div>
-            <button onclick="addEmployee()" class="w-full mt-4 bg-gray-800 text-white font-bold py-4 rounded-2xl shadow-lg hover:bg-black transition-all">ثبت در دیتابیس</button>
+            <button onclick="addEmployee()" class="w-full mt-4 bg-gray-800 text-white font-bold py-4 rounded-2xl shadow-lg hover:bg-black transition-all">??? ?? ???????</button>
         </section>
 
         <!-- Daily Log Panel -->
         <section class="glass p-5 rounded-3xl shadow-xl border border-gray-100">
             <h2 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
                 <span class="w-3 h-3 bg-emerald-500 rounded-full ml-2 animate-pulse"></span>
-                ثبت فعالیت روزانه
+                ??? ?????? ??????
             </h2>
             <div class="space-y-4">
                 <select id="employeeSelector" class="input-style font-bold text-purple-900 text-lg"></select>
                 <div class="grid grid-cols-2 gap-4">
-                    <button onclick="recordAction('ورود')" class="bg-emerald-600 text-white font-bold py-6 rounded-3xl shadow-lg text-lg">ثبت ورود</button>
-                    <button onclick="recordAction('خروج')" class="bg-rose-500 text-white font-bold py-6 rounded-3xl shadow-lg text-lg">ثبت خروج</button>
+                    <button onclick="recordAction('????')" class="bg-emerald-600 text-white font-bold py-6 rounded-3xl shadow-lg text-lg">??? ????</button>
+                    <button onclick="recordAction('????')" class="bg-rose-500 text-white font-bold py-6 rounded-3xl shadow-lg text-lg">??? ????</button>
                 </div>
             </div>
         </section>
 
         <!-- Monitoring Table -->
         <section class="glass p-5 rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-            <h2 class="text-lg font-bold text-gray-800 mb-4">گزارش کارکرد و مبالغ</h2>
+            <h2 class="text-lg font-bold text-gray-800 mb-4">????? ?????? ? ?????</h2>
             <div class="overflow-x-auto">
                 <table class="w-full text-right border-collapse">
                     <thead>
                         <tr class="text-gray-400 border-b text-xs">
-                            <th class="py-3 px-1">نام پرسنل</th>
-                            <th class="py-3 px-1 text-center">زمان</th>
-                            <th class="py-3 px-1 text-center">مبلغ</th>
-                            <th class="py-3 px-1">وضعیت</th>
+                            <th class="py-3 px-1">??? ?????</th>
+                            <th class="py-3 px-1 text-center">????</th>
+                            <th class="py-3 px-1 text-center">????</th>
+                            <th class="py-3 px-1">?????</th>
                         </tr>
                     </thead>
                     <tbody id="dataTable"></tbody>
@@ -128,8 +128,8 @@
             <p class="text-gray-400 text-[10px] font-bold mt-2 uppercase tracking-[0.3em]">Accounting & Logistics Solutions</p>
             <div class="w-16 h-1 bg-gradient-to-r from-transparent via-purple-300 to-transparent my-6"></div>
             <div class="text-[10px] text-gray-400 space-y-1">
-                <p>تمامی حقوق برای حسابداری اورجینال شاپ محفوظ است.</p>
-                <p>پشتیبانی فنی: <span class="text-purple-600 font-bold">eramajid@gmail.com</span></p>
+                <p>????? ???? ???? ???????? ???????? ??? ????? ???.</p>
+                <p>???????? ???: <span class="text-purple-600 font-bold">eramajid@gmail.com</span></p>
             </div>
         </div>
     </footer>
@@ -150,7 +150,7 @@
             if(val > 0) {
                 currentHourlyRate = val;
                 localStorage.setItem('app_hourly_rate', val);
-                alert("نرخ دستمزد ساعتی به " + val.toLocaleString() + " تومان تغییر یافت.");
+                alert("??? ?????? ????? ?? " + val.toLocaleString() + " ????? ????? ????.");
                 renderLogs();
             }
         }
@@ -165,7 +165,7 @@
             const fName = document.getElementById('newFirstName').value;
             const lName = document.getElementById('newLastName').value;
             const card = document.getElementById('newCard').value;
-            if(!fName || !lName) return alert("لطفاً نام را وارد کنید.");
+            if(!fName || !lName) return alert("????? ??? ?? ???? ????.");
             
             employees.push({ id: Date.now(), firstName: fName, lastName: lName, card: card });
             localStorage.setItem('employees_db', JSON.stringify(employees));
@@ -181,27 +181,27 @@
 
         function recordAction(action) {
             const empId = document.getElementById('employeeSelector').value;
-            if(!empId) return alert("ابتدا پرسنل را اضافه کنید.");
+            if(!empId) return alert("????? ????? ?? ????? ????.");
             const emp = employees.find(e => e.id == empId);
             const now = Date.now();
 
-            if (action === 'ورود') {
-                if(logs.find(l => l.empId == empId && l.status === 'در حال کار')) return alert("ورود قبلاً ثبت شده است.");
+            if (action === '????') {
+                if(logs.find(l => l.empId == empId && l.status === '?? ??? ???')) return alert("???? ????? ??? ??? ???.");
                 logs.push({ 
                     id: now, empId, name: `${emp.firstName} ${emp.lastName}`,
                     date: new Date().toLocaleDateString('fa-IR'),
-                    startTimeStamp: now, totalMinutes: 0, wage: 0, status: 'در حال کار' 
+                    startTimeStamp: now, totalMinutes: 0, wage: 0, status: '?? ??? ???' 
                 });
             } else {
-                const entry = logs.findLast(item => item.empId == empId && item.status === 'در حال کار');
+                const entry = logs.findLast(item => item.empId == empId && item.status === '?? ??? ???');
                 if (entry) {
                     const diffMins = (now - entry.startTimeStamp) / 60000;
                     entry.totalMinutes = parseFloat(diffMins.toFixed(2));
                     entry.wage = Math.round(diffMins * (currentHourlyRate / 60));
-                    entry.status = 'منتظر تسویه';
+                    entry.status = '????? ?????';
                     checkBatch(empId);
                 } else {
-                    alert("خطا: شیفت فعالی یافت نشد.");
+                    alert("???: ???? ????? ???? ???.");
                 }
             }
             save();
@@ -209,11 +209,11 @@
         }
 
         function checkBatch(empId) {
-            const pending = logs.filter(l => l.empId == empId && l.status === 'منتظر تسویه');
+            const pending = logs.filter(l => l.empId == empId && l.status === '????? ?????');
             if (pending.length >= 5) {
                 const total = pending.reduce((s, l) => s + l.wage, 0);
                 const emp = employees.find(e => e.id == empId);
-                pending.forEach(l => l.status = 'در انتظار تایید');
+                pending.forEach(l => l.status = '?? ?????? ?????');
                 sendReport(emp, total, pending);
             }
         }
@@ -224,7 +224,7 @@
                 employee_name: `${emp.firstName} ${emp.lastName}`,
                 total_amount: amount.toLocaleString(),
                 card_number: emp.card,
-                details: items.map(i => `${i.date}: ${i.wage} تومان`).join('\n')
+                details: items.map(i => `${i.date}: ${i.wage} ?????`).join('\n')
             };
             document.getElementById('emailNotification').classList.remove('hidden');
             emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
@@ -233,28 +233,28 @@
         }
 
         function simulateEmailReply() {
-            const targets = logs.filter(l => l.status === 'در انتظار تایید');
+            const targets = logs.filter(l => l.status === '?? ?????? ?????');
             if(targets.length > 0) {
-                targets.forEach(l => l.status = 'تسویه شد');
+                targets.forEach(l => l.status = '????? ??');
                 save();
                 renderLogs();
                 document.getElementById('emailNotification').classList.add('hidden');
-                alert("تسویه حساب نهایی با موفقیت انجام شد.");
+                alert("????? ???? ????? ?? ?????? ????? ??.");
             }
         }
 
         function renderLogs() {
             const table = document.getElementById('dataTable');
             table.innerHTML = logs.map((row) => {
-                const isWorking = row.status === 'در حال کار';
-                const isWaiting = row.status === 'در انتظار تایید';
+                const isWorking = row.status === '?? ??? ???';
+                const isWaiting = row.status === '?? ?????? ?????';
                 return `
                 <tr class="border-b text-[13px] hover:bg-gray-50 transition-colors">
                     <td class="py-4 px-1 font-bold text-gray-800">${row.name}</td>
                     <td class="py-4 px-1 text-center">
                         <div class="time-counter ${isWorking ? 'text-rose-500 pulse-red font-bold' : 'text-blue-600'}" 
                              data-start="${row.startTimeStamp}" data-status="${row.status}">
-                            ${isWorking ? '...' : Math.floor(row.totalMinutes) + ' دقیقه'}
+                            ${isWorking ? '...' : Math.floor(row.totalMinutes) + ' ?????'}
                         </div>
                         <div class="text-[8px] text-gray-400 font-bold uppercase">${row.date}</div>
                     </td>
@@ -263,7 +263,7 @@
                     </td>
                     <td class="py-4 px-1">
                         <span class="px-2 py-1 rounded-lg text-[9px] font-bold block text-center shadow-sm
-                            ${row.status === 'تسویه شد' ? 'bg-emerald-600 text-white' : 
+                            ${row.status === '????? ??' ? 'bg-emerald-600 text-white' : 
                               isWaiting ? 'bg-purple-600 text-white' :
                               isWorking ? 'bg-rose-100 text-rose-700' : 'bg-amber-100 text-amber-700'}">
                             ${row.status}
@@ -279,11 +279,11 @@
             const minRate = currentHourlyRate / 60;
             document.getElementById('liveClock').innerText = new Date().toLocaleTimeString('fa-IR');
             
-            document.querySelectorAll('.time-counter[data-status="در حال کار"]').forEach(el => {
+            document.querySelectorAll('.time-counter[data-status="?? ??? ???"]').forEach(el => {
                 const diffSecs = Math.floor((now - parseInt(el.getAttribute('data-start'))) / 1000);
                 el.innerText = `${Math.floor(diffSecs / 60)}:${(diffSecs % 60).toString().padStart(2, '0')}`;
             });
-            document.querySelectorAll('.wage-counter[data-status="در حال کار"]').forEach(el => {
+            document.querySelectorAll('.wage-counter[data-status="?? ??? ???"]').forEach(el => {
                 const diffMins = (now - parseInt(el.getAttribute('data-start'))) / 60000;
                 el.innerText = Math.round(diffMins * minRate).toLocaleString();
             });
